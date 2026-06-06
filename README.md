@@ -1,20 +1,24 @@
 # Pasumarthy Laxmi Veera AppSec Portfolio
 
-This repository contains a static portfolio website plus AppSec project artifacts for internship applications.
+This repository contains the static portfolio website for AppSec internship applications. Each project is kept in its own separate repository and linked from the portfolio cards.
 
 ## Open the portfolio
 
 Open `index.html` in a browser, or serve the folder with any static server.
 
-## Project folders
+## Linked project repositories
 
-- `projects/appsec-automation-platform`: Flask + SQLite security automation platform.
-- `projects/secure-sdlc-dashboard`: React-style Secure SDLC dashboard.
-- `projects/devsecops-pipeline`: GitHub Actions DevSecOps workflow and scanner scripts.
-- `projects/api-security-testing-framework`: Authorized API security testing framework.
-- `projects/docker-security-scanner`: Dockerfile and container security review script.
-- `projects/kubernetes-security-auditor`: Kubernetes manifest auditor.
-- `projects/secure-coding-review-assistant`: Secure code review assistant.
-- `projects/cloud-security-scanner`: AWS-style posture scanner for S3/IAM JSON exports.
-- `projects/vulnerability-management-portal`: Java Spring Boot vulnerability portal design.
-- `projects/ai-secure-code-analyzer`: AI-style secure code analyzer with remediation guidance.
+- [appsec-automation-platform](https://github.com/bhadra19/appsec-automation-platform)
+- [secure-sdlc-dashboard](https://github.com/bhadra19/secure-sdlc-dashboard)
+- [devsecops-pipeline](https://github.com/bhadra19/devsecops-pipeline)
+- [api-security-testing-framework](https://github.com/bhadra19/api-security-testing-framework)
+- [docker-security-scanner](https://github.com/bhadra19/docker-security-scanner)
+- [kubernetes-security-auditor](https://github.com/bhadra19/kubernetes-security-auditor)
+- [secure-coding-review-assistant](https://github.com/bhadra19/secure-coding-review-assistant)
+- [cloud-security-scanner](https://github.com/bhadra19/cloud-security-scanner)
+- [vulnerability-management-portal](https://github.com/bhadra19/vulnerability-management-portal)
+- [ai-secure-code-analyzer](https://github.com/bhadra19/ai-secure-code-analyzer)
+
+## Local split repos
+
+The local project repositories are prepared under `individual-project-repos/`. They are intentionally ignored by this portfolio repo so the portfolio stays separate.
