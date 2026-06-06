@@ -1,6 +1,6 @@
-# Arjun Sharma AppSec Portfolio
+# Pasumarthy Laxmi Veera AppSec Portfolio
 
-This repository contains a static portfolio website plus project artifacts that support the resume claims for an AppSec internship profile.
+This repository contains a static portfolio website plus AppSec project artifacts for internship applications.
 
 ## Open the portfolio
 
@@ -8,7 +8,13 @@ Open `index.html` in a browser, or serve the folder with any static server.
 
 ## Project folders
 
-- `projects/web-vulnerability-scanner`: Authorized-use web posture scanner.
-- `projects/network-service-enumerator`: Consent-gated TCP scanner and banner collector.
-- `projects/secure-login-system`: Secure Flask/JWT project plan and implementation checklist.
-- `projects/ctf-writeups`: CTF write-up template and publishing checklist.
+- `projects/appsec-automation-platform`: Flask + SQLite security automation platform.
+- `projects/secure-sdlc-dashboard`: React-style Secure SDLC dashboard.
+- `projects/devsecops-pipeline`: GitHub Actions DevSecOps workflow and scanner scripts.
+- `projects/api-security-testing-framework`: Authorized API security testing framework.
+- `projects/docker-security-scanner`: Dockerfile and container security review script.
+- `projects/kubernetes-security-auditor`: Kubernetes manifest auditor.
+- `projects/secure-coding-review-assistant`: Secure code review assistant.
+- `projects/cloud-security-scanner`: AWS-style posture scanner for S3/IAM JSON exports.
+- `projects/vulnerability-management-portal`: Java Spring Boot vulnerability portal design.
+- `projects/ai-secure-code-analyzer`: AI-style secure code analyzer with remediation guidance.

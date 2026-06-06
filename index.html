@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Arjun Sharma | AppSec Portfolio</title>
+    <title>Pasumarthy Laxmi Veera | AppSec Portfolio</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#home">Arjun Sharma</a>
+      <a class="brand" href="#home">Pasumarthy Laxmi Veera</a>
       <nav aria-label="Primary navigation">
         <a href="#projects">Projects</a>
-        <a href="#achievements">Achievements</a>
         <a href="#skills">Skills</a>
+        <a href="#pipeline">Pipeline</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -20,134 +20,136 @@
     <main id="home">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Application Security Intern Candidate</p>
-          <h1>Offensive security projects built around web, network, and cloud fundamentals.</h1>
+          <p class="eyebrow">Application Security Portfolio</p>
+          <h1>Security automation, DevSecOps, API testing, and cloud security projects for AppSec roles.</h1>
           <p>
-            I am a B.Tech Computer Science student focused on penetration testing, Python and Bash automation,
-            and practical vulnerability assessment workflows.
+            A practical portfolio focused on Secure SDLC, vulnerability management, CI/CD security,
+            code review automation, and modern application security reporting.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#projects">View projects</a>
-            <a class="button secondary" href="#contact">Contact me</a>
+            <a class="button secondary" href="https://github.com/bhadra19/cybersecurity_portifolio">GitHub repo</a>
           </div>
         </div>
-        <div class="hero-panel" aria-label="Security focus summary">
+        <div class="hero-panel" aria-label="Portfolio highlights">
           <div>
-            <span class="metric">20+</span>
-            <span>HTB and TryHackMe machines completed</span>
+            <span class="metric">10</span>
+            <span>AppSec projects mapped to Rubrik-style internship keywords</span>
           </div>
           <div>
-            <span class="metric">Top 5%</span>
-            <span>TryHackMe global leaderboard</span>
+            <span class="metric">4</span>
+            <span>Priority areas: SSDLC, DevSecOps, API security, cloud security</span>
           </div>
           <div>
-            <span class="metric">60+</span>
-            <span>Students trained in SQL injection and XSS basics</span>
+            <span class="metric">CI/CD</span>
+            <span>GitHub Actions workflow for SAST, dependency, and secret checks</span>
           </div>
         </div>
       </section>
 
       <section id="projects" class="section">
         <div class="section-heading">
-          <p class="eyebrow">Portfolio Projects</p>
-          <h2>Resume projects with implementation notes</h2>
+          <p class="eyebrow">Featured Projects</p>
+          <h2>Actual portfolio projects visible in GitHub</h2>
         </div>
         <div class="project-grid">
-          <article class="card">
-            <div class="card-top">
-              <span class="tag">Python</span>
-              <span class="tag">OWASP</span>
-            </div>
-            <h3>Web Application Vulnerability Scanner</h3>
-            <p>
-              A defensive scanner for authorized lab targets that checks HTTP posture, forms, reflected input,
-              and report quality without automating destructive exploitation.
-            </p>
-            <a href="projects/web-vulnerability-scanner/README.md">Project notes</a>
+          <article class="card featured">
+            <div class="card-top"><span class="rating">★★★★★</span><span class="tag">Python</span><span class="tag">Flask</span></div>
+            <h3>AppSec Automation Platform</h3>
+            <p>Upload code, run security checks, track vulnerability severity, and generate SQLite-backed reports.</p>
+            <a href="projects/appsec-automation-platform/README.md">Open project</a>
+          </article>
+          <article class="card featured">
+            <div class="card-top"><span class="rating">★★★★★</span><span class="tag">React</span><span class="tag">SQLite</span></div>
+            <h3>Secure SDLC Dashboard</h3>
+            <p>Track remediation status, security metrics, ownership, and executive AppSec trends.</p>
+            <a href="projects/secure-sdlc-dashboard/README.md">Open project</a>
+          </article>
+          <article class="card featured">
+            <div class="card-top"><span class="rating">★★★★★</span><span class="tag">Actions</span><span class="tag">Docker</span></div>
+            <h3>DevSecOps Pipeline</h3>
+            <p>GitHub Actions workflow for SAST, dependency review, secret detection, and reports.</p>
+            <a href="projects/devsecops-pipeline/README.md">Open project</a>
+          </article>
+          <article class="card featured">
+            <div class="card-top"><span class="rating">★★★★★</span><span class="tag">FastAPI</span><span class="tag">Auth</span></div>
+            <h3>API Security Testing Framework</h3>
+            <p>Test JWT handling, broken authorization, rate limits, and API fuzzing for authorized targets.</p>
+            <a href="projects/api-security-testing-framework/README.md">Open project</a>
           </article>
           <article class="card">
-            <div class="card-top">
-              <span class="tag">Python</span>
-              <span class="tag">Recon</span>
-            </div>
-            <h3>Network Port Scanner & Service Enumerator</h3>
-            <p>
-              A consent-gated TCP scanner and banner collector designed for lab hosts, with CSV output and
-              clean findings for portfolio review.
-            </p>
-            <a href="projects/network-service-enumerator/README.md">Project notes</a>
+            <div class="card-top"><span class="rating">★★★★</span><span class="tag">Docker</span></div>
+            <h3>Docker Security Scanner</h3>
+            <p>Review Dockerfiles and image metadata for risky users, exposed ports, and weak build practices.</p>
+            <a href="projects/docker-security-scanner/README.md">Open project</a>
           </article>
           <article class="card">
-            <div class="card-top">
-              <span class="tag">Flask</span>
-              <span class="tag">JWT</span>
-            </div>
-            <h3>Secure Login System</h3>
-            <p>
-              A secure-authentication project brief with JWT, role-based access control, input validation,
-              and a before-and-after vulnerability report structure.
-            </p>
-            <a href="projects/secure-login-system/README.md">Project notes</a>
+            <div class="card-top"><span class="rating">★★★★</span><span class="tag">Kubernetes</span></div>
+            <h3>Kubernetes Security Auditor</h3>
+            <p>Audit manifests for RBAC risks, privileged pods, missing limits, and pod security gaps.</p>
+            <a href="projects/kubernetes-security-auditor/README.md">Open project</a>
           </article>
           <article class="card">
-            <div class="card-top">
-              <span class="tag">CTF</span>
-              <span class="tag">Write-ups</span>
-            </div>
-            <h3>CTF Write-ups & HTB Machines</h3>
-            <p>
-              A write-up template and publication checklist for documenting discovery, exploitation reasoning,
-              remediation, and lessons learned.
-            </p>
-            <a href="projects/ctf-writeups/README.md">Project notes</a>
+            <div class="card-top"><span class="rating">★★★★</span><span class="tag">Python</span></div>
+            <h3>Secure Coding Review Assistant</h3>
+            <p>Detect SQL injection, XSS patterns, hardcoded secrets, and produce remediation guidance.</p>
+            <a href="projects/secure-coding-review-assistant/README.md">Open project</a>
+          </article>
+          <article class="card">
+            <div class="card-top"><span class="rating">★★★★</span><span class="tag">AWS</span></div>
+            <h3>Cloud Security Scanner</h3>
+            <p>Analyze S3 and IAM-style JSON exports for public exposure and risky permissions.</p>
+            <a href="projects/cloud-security-scanner/README.md">Open project</a>
+          </article>
+          <article class="card">
+            <div class="card-top"><span class="rating">★★★★</span><span class="tag">Java</span><span class="tag">Spring</span></div>
+            <h3>Vulnerability Management Portal</h3>
+            <p>CVE tracking, assignment workflow, SLA state, and risk prioritization design.</p>
+            <a href="projects/vulnerability-management-portal/README.md">Open project</a>
+          </article>
+          <article class="card featured">
+            <div class="card-top"><span class="rating">★★★★★</span><span class="tag">Python</span><span class="tag">LLM</span></div>
+            <h3>AI-Powered Secure Code Analyzer</h3>
+            <p>Rule-based secure code analysis with optional LLM-style explanation and remediation output.</p>
+            <a href="projects/ai-secure-code-analyzer/README.md">Open project</a>
           </article>
         </div>
       </section>
 
-      <section id="achievements" class="section split">
+      <section id="skills" class="section split">
         <div class="section-heading">
-          <p class="eyebrow">Achievements</p>
-          <h2>Proof points</h2>
-        </div>
-        <ul class="timeline">
-          <li>Ranked in the Top 5% on TryHackMe under the handle <strong>arjunsec</strong>.</li>
-          <li>Participated in three national-level CTF competitions across web exploitation and privilege escalation.</li>
-          <li>Core member of the college Cybersecurity Club and led workshops on SQL injection and XSS.</li>
-          <li>Completed the Google Cybersecurity Professional Certificate on Coursera.</li>
-          <li>Preparing for eJPT certification, targeted for August 2026.</li>
-        </ul>
-      </section>
-
-      <section id="skills" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Technical Skills</p>
-          <h2>Security toolkit</h2>
+          <p class="eyebrow">Keywords</p>
+          <h2>AppSec resume alignment</h2>
         </div>
         <div class="skill-list">
-          <span>Burp Suite</span>
-          <span>Nmap</span>
-          <span>Metasploit</span>
-          <span>OWASP ZAP</span>
-          <span>Nikto</span>
-          <span>Gobuster</span>
-          <span>Python</span>
-          <span>Bash</span>
-          <span>Java</span>
-          <span>Wireshark</span>
-          <span>AWS Basics</span>
-          <span>GitHub</span>
+          <span>Application Security</span><span>Secure SDLC</span><span>Security Automation</span>
+          <span>Vulnerability Management</span><span>Security Metrics</span><span>CI/CD</span>
+          <span>DevSecOps</span><span>API Security</span><span>Authentication</span>
+          <span>Authorization</span><span>Container Security</span><span>Kubernetes</span>
+          <span>Cloud Security</span><span>AWS</span><span>Secure Coding</span>
+        </div>
+      </section>
+
+      <section id="pipeline" class="section contact">
+        <div>
+          <p class="eyebrow">DevSecOps</p>
+          <h2>Security checks run from GitHub Actions.</h2>
+          <p>The repository includes a workflow under <strong>.github/workflows</strong> to demonstrate automated scanning and reporting.</p>
+        </div>
+        <div class="contact-links">
+          <a href=".github/workflows/devsecops-security.yml">View workflow</a>
+          <a href="projects/devsecops-pipeline/README.md">Pipeline docs</a>
         </div>
       </section>
 
       <section id="contact" class="section contact">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Available for AppSec internship conversations.</h2>
+          <h2>GitHub portfolio for AppSec internship applications.</h2>
         </div>
         <div class="contact-links">
-          <a href="mailto:arjun.sharma@email.com">arjun.sharma@email.com</a>
-          <a href="https://linkedin.com/in/arjunsharma">linkedin.com/in/arjunsharma</a>
-          <a href="https://github.com/arjunsharma">github.com/arjunsharma</a>
+          <a href="https://github.com/bhadra19/cybersecurity_portifolio">GitHub repository</a>
+          <a href="https://github.com/bhadra19">GitHub profile</a>
         </div>
       </section>
     </main>

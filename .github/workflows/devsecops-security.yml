@@ -1,0 +1,35 @@
+name: DevSecOps Security Checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Secure code review
+        run: python projects/secure-coding-review-assistant/review.py --path . --out secure-code-findings.json
+
+      - name: Secret detection
+        run: python scripts/secret_scan.py --path . --out secret-findings.json
+
+      - name: Dependency review
+        run: python scripts/dependency_scan.py --path . --out dependency-findings.json
+
+      - name: Upload security reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: security-reports
+          path: |
+            secure-code-findings.json
+            secret-findings.json
+            dependency-findings.json
