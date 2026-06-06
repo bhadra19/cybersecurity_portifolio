@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arjun Sharma | AppSec Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home">Arjun Sharma</a>
+      <nav aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Application Security Intern Candidate</p>
+          <h1>Offensive security projects built around web, network, and cloud fundamentals.</h1>
+          <p>
+            I am a B.Tech Computer Science student focused on penetration testing, Python and Bash automation,
+            and practical vulnerability assessment workflows.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View projects</a>
+            <a class="button secondary" href="#contact">Contact me</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Security focus summary">
+          <div>
+            <span class="metric">20+</span>
+            <span>HTB and TryHackMe machines completed</span>
+          </div>
+          <div>
+            <span class="metric">Top 5%</span>
+            <span>TryHackMe global leaderboard</span>
+          </div>
+          <div>
+            <span class="metric">60+</span>
+            <span>Students trained in SQL injection and XSS basics</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Portfolio Projects</p>
+          <h2>Resume projects with implementation notes</h2>
+        </div>
+        <div class="project-grid">
+          <article class="card">
+            <div class="card-top">
+              <span class="tag">Python</span>
+              <span class="tag">OWASP</span>
+            </div>
+            <h3>Web Application Vulnerability Scanner</h3>
+            <p>
+              A defensive scanner for authorized lab targets that checks HTTP posture, forms, reflected input,
+              and report quality without automating destructive exploitation.
+            </p>
+            <a href="projects/web-vulnerability-scanner/README.md">Project notes</a>
+          </article>
+          <article class="card">
+            <div class="card-top">
+              <span class="tag">Python</span>
+              <span class="tag">Recon</span>
+            </div>
+            <h3>Network Port Scanner & Service Enumerator</h3>
+            <p>
+              A consent-gated TCP scanner and banner collector designed for lab hosts, with CSV output and
+              clean findings for portfolio review.
+            </p>
+            <a href="projects/network-service-enumerator/README.md">Project notes</a>
+          </article>
+          <article class="card">
+            <div class="card-top">
+              <span class="tag">Flask</span>
+              <span class="tag">JWT</span>
+            </div>
+            <h3>Secure Login System</h3>
+            <p>
+              A secure-authentication project brief with JWT, role-based access control, input validation,
+              and a before-and-after vulnerability report structure.
+            </p>
+            <a href="projects/secure-login-system/README.md">Project notes</a>
+          </article>
+          <article class="card">
+            <div class="card-top">
+              <span class="tag">CTF</span>
+              <span class="tag">Write-ups</span>
+            </div>
+            <h3>CTF Write-ups & HTB Machines</h3>
+            <p>
+              A write-up template and publication checklist for documenting discovery, exploitation reasoning,
+              remediation, and lessons learned.
+            </p>
+            <a href="projects/ctf-writeups/README.md">Project notes</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="achievements" class="section split">
+        <div class="section-heading">
+          <p class="eyebrow">Achievements</p>
+          <h2>Proof points</h2>
+        </div>
+        <ul class="timeline">
+          <li>Ranked in the Top 5% on TryHackMe under the handle <strong>arjunsec</strong>.</li>
+          <li>Participated in three national-level CTF competitions across web exploitation and privilege escalation.</li>
+          <li>Core member of the college Cybersecurity Club and led workshops on SQL injection and XSS.</li>
+          <li>Completed the Google Cybersecurity Professional Certificate on Coursera.</li>
+          <li>Preparing for eJPT certification, targeted for August 2026.</li>
+        </ul>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Technical Skills</p>
+          <h2>Security toolkit</h2>
+        </div>
+        <div class="skill-list">
+          <span>Burp Suite</span>
+          <span>Nmap</span>
+          <span>Metasploit</span>
+          <span>OWASP ZAP</span>
+          <span>Nikto</span>
+          <span>Gobuster</span>
+          <span>Python</span>
+          <span>Bash</span>
+          <span>Java</span>
+          <span>Wireshark</span>
+          <span>AWS Basics</span>
+          <span>GitHub</span>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Available for AppSec internship conversations.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:arjun.sharma@email.com">arjun.sharma@email.com</a>
+          <a href="https://linkedin.com/in/arjunsharma">linkedin.com/in/arjunsharma</a>
+          <a href="https://github.com/arjunsharma">github.com/arjunsharma</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
