@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pasumarthy Laxmi Veera | AppSec Portfolio</title>
+    <title>Pasumarthy Laxmi Veera | Dynamic AppSec Portfolio</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -20,7 +20,7 @@
     <main id="home">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Application Security Portfolio</p>
+          <p class="eyebrow">Dynamic Application Security Portfolio</p>
           <h1>Security automation, DevSecOps, API testing, and cloud security projects for AppSec roles.</h1>
           <p>
             A practical portfolio focused on Secure SDLC, vulnerability management, CI/CD security,
@@ -31,89 +31,36 @@
             <a class="button secondary" href="https://github.com/bhadra19/cybersecurity_portifolio">GitHub repo</a>
           </div>
         </div>
-        <div class="hero-panel" aria-label="Portfolio highlights">
-          <div>
-            <span class="metric">10</span>
-            <span>AppSec projects mapped to Rubrik-style internship keywords</span>
-          </div>
-          <div>
-            <span class="metric">4</span>
-            <span>Priority areas: SSDLC, DevSecOps, API security, cloud security</span>
-          </div>
-          <div>
-            <span class="metric">CI/CD</span>
-            <span>GitHub Actions workflow for SAST, dependency, and secret checks</span>
-          </div>
-        </div>
+        <div class="hero-panel" id="heroStats" aria-label="Portfolio highlights"></div>
       </section>
 
       <section id="projects" class="section">
         <div class="section-heading">
           <p class="eyebrow">Featured Projects</p>
-          <h2>Actual portfolio projects visible in GitHub</h2>
+          <h2>Projects loaded dynamically from portfolio data</h2>
         </div>
-        <div class="project-grid">
-          <article class="card featured">
-            <div class="card-top"><span class="rating">★★★★★</span><span class="tag">Python</span><span class="tag">Flask</span></div>
-            <h3>AppSec Automation Platform</h3>
-            <p>Upload code, run security checks, track vulnerability severity, and generate SQLite-backed reports.</p>
-            <a href="https://github.com/bhadra19/appsec-automation-platform">Open project</a>
-          </article>
-          <article class="card featured">
-            <div class="card-top"><span class="rating">★★★★★</span><span class="tag">React</span><span class="tag">SQLite</span></div>
-            <h3>Secure SDLC Dashboard</h3>
-            <p>Track remediation status, security metrics, ownership, and executive AppSec trends.</p>
-            <a href="https://github.com/bhadra19/secure-sdlc-dashboard">Open project</a>
-          </article>
-          <article class="card featured">
-            <div class="card-top"><span class="rating">★★★★★</span><span class="tag">Actions</span><span class="tag">Docker</span></div>
-            <h3>DevSecOps Pipeline</h3>
-            <p>GitHub Actions workflow for SAST, dependency review, secret detection, and reports.</p>
-            <a href="https://github.com/bhadra19/devsecops-pipeline">Open project</a>
-          </article>
-          <article class="card featured">
-            <div class="card-top"><span class="rating">★★★★★</span><span class="tag">FastAPI</span><span class="tag">Auth</span></div>
-            <h3>API Security Testing Framework</h3>
-            <p>Test JWT handling, broken authorization, rate limits, and API fuzzing for authorized targets.</p>
-            <a href="https://github.com/bhadra19/api-security-testing-framework">Open project</a>
-          </article>
-          <article class="card">
-            <div class="card-top"><span class="rating">★★★★</span><span class="tag">Docker</span></div>
-            <h3>Docker Security Scanner</h3>
-            <p>Review Dockerfiles and image metadata for risky users, exposed ports, and weak build practices.</p>
-            <a href="https://github.com/bhadra19/docker-security-scanner">Open project</a>
-          </article>
-          <article class="card">
-            <div class="card-top"><span class="rating">★★★★</span><span class="tag">Kubernetes</span></div>
-            <h3>Kubernetes Security Auditor</h3>
-            <p>Audit manifests for RBAC risks, privileged pods, missing limits, and pod security gaps.</p>
-            <a href="https://github.com/bhadra19/kubernetes-security-auditor">Open project</a>
-          </article>
-          <article class="card">
-            <div class="card-top"><span class="rating">★★★★</span><span class="tag">Python</span></div>
-            <h3>Secure Coding Review Assistant</h3>
-            <p>Detect SQL injection, XSS patterns, hardcoded secrets, and produce remediation guidance.</p>
-            <a href="https://github.com/bhadra19/secure-coding-review-assistant">Open project</a>
-          </article>
-          <article class="card">
-            <div class="card-top"><span class="rating">★★★★</span><span class="tag">AWS</span></div>
-            <h3>Cloud Security Scanner</h3>
-            <p>Analyze S3 and IAM-style JSON exports for public exposure and risky permissions.</p>
-            <a href="https://github.com/bhadra19/cloud-security-scanner">Open project</a>
-          </article>
-          <article class="card">
-            <div class="card-top"><span class="rating">★★★★</span><span class="tag">Java</span><span class="tag">Spring</span></div>
-            <h3>Vulnerability Management Portal</h3>
-            <p>CVE tracking, assignment workflow, SLA state, and risk prioritization design.</p>
-            <a href="https://github.com/bhadra19/vulnerability-management-portal">Open project</a>
-          </article>
-          <article class="card featured">
-            <div class="card-top"><span class="rating">★★★★★</span><span class="tag">Python</span><span class="tag">LLM</span></div>
-            <h3>AI-Powered Secure Code Analyzer</h3>
-            <p>Rule-based secure code analysis with optional LLM-style explanation and remediation output.</p>
-            <a href="https://github.com/bhadra19/ai-secure-code-analyzer">Open project</a>
-          </article>
+
+        <div class="toolbar" aria-label="Project filters">
+          <label class="search-box">
+            <span>Search</span>
+            <input id="projectSearch" type="search" placeholder="Search AppSec, AWS, API, Docker">
+          </label>
+          <label>
+            <span>Category</span>
+            <select id="categoryFilter"></select>
+          </label>
+          <label>
+            <span>Status</span>
+            <select id="statusFilter">
+              <option value="all">All projects</option>
+              <option value="Runnable">Runnable</option>
+              <option value="Portfolio-ready">Portfolio-ready</option>
+            </select>
+          </label>
         </div>
+
+        <div class="project-count" id="projectCount"></div>
+        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
       </section>
 
       <section id="skills" class="section split">
@@ -121,20 +68,14 @@
           <p class="eyebrow">Keywords</p>
           <h2>AppSec resume alignment</h2>
         </div>
-        <div class="skill-list">
-          <span>Application Security</span><span>Secure SDLC</span><span>Security Automation</span>
-          <span>Vulnerability Management</span><span>Security Metrics</span><span>CI/CD</span>
-          <span>DevSecOps</span><span>API Security</span><span>Authentication</span>
-          <span>Authorization</span><span>Container Security</span><span>Kubernetes</span>
-          <span>Cloud Security</span><span>AWS</span><span>Secure Coding</span>
-        </div>
+        <div class="skill-list" id="skillList"></div>
       </section>
 
       <section id="pipeline" class="section contact">
         <div>
           <p class="eyebrow">DevSecOps</p>
-          <h2>Security checks run from GitHub Actions.</h2>
-          <p>The repository includes a workflow under <strong>.github/workflows</strong> to demonstrate automated scanning and reporting.</p>
+          <h2>Security checks run from a dedicated DevSecOps project repo.</h2>
+          <p>The pipeline project includes local scanner scripts and a GitHub Actions workflow for automated reports.</p>
         </div>
         <div class="contact-links">
           <a href="https://github.com/bhadra19/devsecops-pipeline/blob/master/.github/workflows/devsecops-security.yml">View workflow</a>
@@ -148,12 +89,13 @@
           <h2>GitHub portfolio for AppSec internship applications.</h2>
         </div>
         <div class="contact-links">
-          <a href="https://github.com/bhadra19/cybersecurity_portifolio">GitHub repository</a>
+          <a href="https://github.com/bhadra19/cybersecurity_portifolio">Portfolio repository</a>
           <a href="https://github.com/bhadra19">GitHub profile</a>
         </div>
       </section>
     </main>
 
+    <script src="projects-data.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

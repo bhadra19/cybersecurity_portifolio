@@ -173,6 +173,40 @@ nav a {
   gap: 16px;
 }
 
+.toolbar {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(180px, 240px) minmax(180px, 220px);
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.toolbar label {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.toolbar input,
+.toolbar select {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  padding: 10px 12px;
+}
+
+.project-count {
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
 .card {
   min-height: 320px;
   display: flex;
@@ -207,7 +241,23 @@ nav a {
 
 .card-top {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.run-command {
+  font-size: 0.9rem;
+}
+
+.run-command code {
+  color: var(--green-dark);
+  font-weight: 800;
 }
 
 .tag,
@@ -269,6 +319,10 @@ nav a {
 
   .project-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .toolbar {
+    grid-template-columns: 1fr;
   }
 }
 

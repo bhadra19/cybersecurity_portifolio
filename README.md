@@ -1,6 +1,13 @@
 # Pasumarthy Laxmi Veera AppSec Portfolio
 
-This repository contains the static portfolio website for AppSec internship applications. Each project is kept in its own separate repository and linked from the portfolio cards.
+This repository contains the dynamic portfolio website for AppSec internship applications. Each project is kept in its own separate repository and linked from the portfolio cards.
+
+## Dynamic structure
+
+- `index.html`: portfolio shell and sections.
+- `projects-data.js`: project data, repository links, skills, run commands, and categories.
+- `script.js`: renders project cards, live stats, search, category filters, status filters, and skills.
+- `styles.css`: responsive portfolio styling.
 
 ## Open the portfolio
 
